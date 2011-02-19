@@ -36,10 +36,12 @@
     <bean name="org.jboss.switchboard.ResourceEnvRefResourceProvider" class="org.jboss.switchboard.mc.resource.provider.ResourceEnvRefProvider">
         <property name="typedResourceEnvRefResourceProviders">
             <map keyClass="java.lang.String" valueClass="org.jboss.switchboard.mc.spi.MCBasedResourceProvider">
+<!--
                 <entry>
                     <key>javax.xml.ws.WebServiceContext</key>
                     <value><inject bean="org.jboss.switchboard.WebServiceContextResourceProvider"/></value>
                 </entry>
+-->
                 <!--
                 <entry>
                     <key>javax.ejb.EJBContext</key>
@@ -165,8 +167,8 @@
                 <inject bean="org.jboss.switchboard.ResourceRefResourceProvider"/>
                 <!--
                 <inject bean="org.jboss.switchboard.MessageDestinationRefResourceProvider"/>
-                -->
                 <inject bean="org.jboss.switchboard.WebServiceRefResourceProvider"/>
+                -->
                 <inject bean="org.jboss.switchboard.PersistenceUnitResourceProvider"/>
                 <!-- Disabled till we resolve the transient failures with EJB jndi dependencies -->
                 <!--
