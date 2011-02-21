@@ -6,22 +6,30 @@
 	<target name="slim">
 		<delete>
 			<fileset dir="${jboss.home}/common/deploy">
-				<include name="*.war" />
+				<include name="*" />
 			</fileset>
 			<fileset dir="${jboss.home}/common/lib">
 				<include name="cxf*.jar" />
 				<include name="hornetq.jar" />
 				<include name="jboss-iiop*.jar" />
 				<include name="jboss-remoting.jar" />
-				<include name="jbossws-native-core.jar" />
+				<include name="jbossws-*.jar" />
 				<include name="bcel.jar" />
 				<include name="quartz.jar" />
 				<include name="mail.jar" />								<include name="wss4j.jar" />
+				<include name="wsdl4j.jar" />
 				<include name="jboss-remoting-3.jar" />
 				<include name="jboss-jsr88.jar" />
 				<include name="antlr.jar" />
 				<include name="bsh.jar" />
 				<include name="xmlsec.jar" />
+				<include name="xalan.jar" />
+				<include name="FastInfoset.jar" />
+				<include name="XmlSchema.jar" />
+				<include name="jbossha.jar" />
+				<include name="jaxen.jar" />
+				<include name="xnio*.jar" />
+
 			</fileset>
 		</delete>
 

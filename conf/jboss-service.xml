@@ -12,7 +12,6 @@
       the shared JBOSS_HOME/common/lib directory. This can be restricted to
       specific jars by specifying them in the archives attribute.
    -->
-   <classpath codebase="${jboss.server.lib.url}" archives="*"/>
    <classpath codebase="${jboss.common.lib.url}" archives="*"/>
 
    <!-- 
