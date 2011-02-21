@@ -1,0 +1,32 @@
+<!-- An ant build script to remove the extra jars and content from the AS6 root structure
+-->
+<project name="Slim AS6" default="slim">
+	<property name="jboss.home" value="../.." />
+
+	<target name="slim">
+		<delete>
+			<fileset dir="${jboss.home}/common/deploy">
+				<include name="*.war" />
+			</fileset>
+			<fileset dir="${jboss.home}/common/lib">
+				<include name="cxf*.jar" />
+				<include name="hornetq.jar" />
+				<include name="jboss-iiop*.jar" />
+				<include name="jboss-remoting.jar" />
+				<include name="jbossws-native-core.jar" />
+				<include name="bcel.jar" />
+				<include name="quartz.jar" />
+				<include name="mail.jar" />								<include name="wss4j.jar" />
+				<include name="jboss-remoting-3.jar" />
+				<include name="jboss-jsr88.jar" />
+				<include name="antlr.jar" />
+				<include name="bsh.jar" />
+				<include name="xmlsec.jar" />
+			</fileset>
+		</delete>
+
+	</target>
+
+	<target name="package" description="">
+	</target>
+</project>
