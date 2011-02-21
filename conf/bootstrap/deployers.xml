@@ -286,7 +286,7 @@
    </bean>
    <bean name="ClassLoadingDefaultDeployer" class="org.jboss.deployers.plugins.classloading.ClassLoadingDefaultDeployer">
       <property name="defaultMetaData">
-         <classloading xmlns="urn:jboss:classloading:1.0" export-all="NON_EMPTY" import-all="true"/>
+         <classloading xmlns="urn:jboss:classloading:1.0" export-all="NON_EMPTY" import-all="true" cache="false" />
       </property>
    </bean>
    <bean name="ClassLoaderClassPathDeployer" class="org.jboss.deployers.vfs.plugins.classloader.VFSClassLoaderClassPathDeployer">
