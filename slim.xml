@@ -37,6 +37,8 @@
 				<include name="jboss-monitoring.jar" />
 				<include name="jboss-marshalling.jar" />
 				<include name="jboss-negotiation.jar" />
+				<include name="autonumber-plugin.jar" />
+				<include name="properties-plugin.jar" />
 				<include name="proxy*.jar" />
 				<include name="scheduler*.jar" />
 
